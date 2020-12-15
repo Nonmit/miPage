@@ -1,0 +1,61 @@
+.miPhone{
+  position: relative;
+}
+.miPhone >a >span{
+  position: absolute;
+  right: 30px;
+  top: 195px;
+  color: #424242;
+}
+img[alt="mainImg"]{
+  width: 100%;
+  margin-top: 35px;
+}
+.miPhone img[alt="asideImg"]{
+  width:236px;
+  height: 616px;
+  float: left;
+  transition: all 0.2 linear;
+  transform: translate3d(0,0px,0);
+}
+.miPhone .phoneList{
+  list-style: none;
+  font-size: 0px;
+}
+.miPhone .phoneList li{
+  font-size: 1rem;
+  display: inline-block;
+  width: 236px;
+  height: 302px;
+  background: white;
+  margin-left: 11px;
+  vertical-align: top;
+  font: 1rem;
+  text-align: center;
+  transition: all 0.2 linear;
+  transform: translate3d(0,0px,0);
+}
+.miPhone .phoneList li:nth-last-child(n+5){
+  margin-bottom:12px ;
+}
+.miPhone >a > span::after{
+  content: '';
+  display: inline-block;
+  width:24px;
+  height: 24px;
+  background: url(../img/right-circle-static.png) no-repeat;
+  background-size: 24px 24px;
+  position: absolute;
+  left: 70px;
+  top: -1px;
+}
+.miPhone>a > span:hover{
+  color: #FF6700;
+  transition: 0.3s;
+}
+.miPhone >a > span:hover::after{
+  background: url(../img/right-circle.png) no-repeat;
+  background-size: 24px 24px;
+  transition: 0.3s;
+}
+

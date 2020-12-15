@@ -1,0 +1,175 @@
+footer{
+  width: 100%;
+}
+.mt-15{
+  margin-top: 15px;
+}
+footer .afterSale{
+  list-style: none;
+  border-bottom: 1px solid #E0E0E0;
+}
+footer .afterSale li{
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 80px;
+  position: relative;
+
+}
+footer .afterSale li a{
+  text-decoration: none;
+  color: #6C615A;
+}
+footer .afterSale li:not(:nth-last-child(1))::after{
+  content: '|';
+  color: #E0E0E0;
+  position: absolute;
+  left: 240px;
+}
+
+footer .afterSaleDetail{
+  display: inline-block;
+
+}
+
+footer .afterSaleDetail,
+footer .afterSaleDetail ul{
+
+  list-style: none;
+}
+
+footer .afterSaleDetail li a{
+  text-decoration: none;
+}
+footer .afterSaleDetail>li{
+  display: inline-block;
+  width: 160px;
+
+}
+footer .afterSaleDetail>li a{
+    color: #424242;
+    font-size: 14px;
+    line-height: 80px;
+}
+
+footer .afterSaleDetail>li>ul>li>a{
+  color: #757575;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+footer .miTel{
+  display: inline-block;
+  text-align: center;
+  width: 235px;
+  border-left:1px solid #E0E0E0;
+  margin-left: -10px;
+  padding-left: 10px; ;
+}
+footer .miTel span{
+  font-size: 22px;
+  color: #FF6700;
+  line-height: 36px;
+}
+footer .miTel p{
+  color:#757575;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+footer .miTel .pcService{
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #FF6700;
+  border:1px solid #FF6700;
+  margin: 16px auto 0px;
+}
+footer .miTel .pcService:hover{
+  background: #FF6700;
+  color: white;
+}
+
+
+/* last */
+
+footer.lastSomething{
+  background:#FAFAFA ;
+  height: 250px;
+  /* padding-top:30px; */
+}
+
+footer.lastSomething .footerLogo{
+  display: inline-block;
+  background: url(../img/logo-footer.png) no-repeat;
+  width: 57px;
+  height: 57px;
+  position: relative;
+  top: 30px;
+
+}
+footer.lastSomething>div{
+  vertical-align: top;
+  width: 1226px;
+  margin: 30px auto 0px;
+}
+footer.lastSomething ul{
+  list-style: none;
+  display: inline-block;
+  width: 1160px;
+  height: 141px;
+  position: relative;
+  top: 3px;
+}
+footer.lastSomething ul li{
+  display: inline-block;
+}
+footer.lastSomething ul li a:hover{
+  color: #FF6700;
+}
+footer.lastSomething ul li:not(:nth-last-child(1))::after{
+  content: '|';
+  display: inline-block;
+  color:#E0E0E0;
+  margin: 0px 1px;
+  word-wrap: wrap wra;
+
+}
+footer.lastSomething ul li a{
+  text-decoration: none;
+  color: #757575;
+  font-size: 12px;
+}
+footer.lastSomething .miArticle{
+  font-size: 12px;
+  color: #B0B0B0;
+  width: 670px;
+  height: 70px;
+  position: relative;
+  top: -100px;
+  left: 60px;
+}
+/* footer.lastSomething >p{
+  text-align: center;
+  font-size: 22px;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif; */
+  /* color:#D6D6D6;
+  position: relative;
+  top:-30px;
+} */
+
+footer.lastSomething .miTitle{
+  width: 267px;
+  height: 19px;
+  margin: -40px auto;
+  background: url(../img/slogan2016.png) no-repeat;
+}
+footer.lastSomething .miArticle a > img{
+  display: inline-block;
+  width: 85px;
+  height: 28px;
+}
+
+/* 侧边栏 */

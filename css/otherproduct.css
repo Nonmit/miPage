@@ -1,0 +1,132 @@
+.otherProduct{
+  width: 100%;
+  background-color: #F5F5F5;
+  margin-top: 26px;
+}
+
+.forCenter{
+  width: 1226px;
+  margin: 0 auto;
+
+}
+.otherProduct h2{
+  font-weight: lighter;
+  margin: 20px 0px 0px;
+  line-height: 62px;
+  height: 62px;
+}
+
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.miPhone img[alt="asideImg"]:hover,
+.miPhone .phoneList li:hover,
+.detailAll li:hover,
+.otherProduct  div > a> img[alt="asideImg"]:hover,
+.newProduct > a > img[alt="newProductImg"]:hover,
+.miFamilyMachine .machineDetail li:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  transition: all 0.2s linear;
+  transform: translate3d(0,-2px,0px);
+}
+
+.otherProduct section[class] ul>li>a> p:nth-child(2){
+  font-size: 14px;
+  color: #333333;
+}
+.otherProduct section[class] ul>li>a> p:nth-child(3){
+  font-size: 12px;
+  color: #B0B0B0;
+}
+.otherProduct section[class] ul>li>a> p:nth-child(4){
+  font-size: 14px;
+  line-height: 30px;
+  color: #FF6700;
+}
+.otherProduct section[class] ul>li>a> p:nth-child(4)>del{
+  font-size: 14px;
+  color: #B0B0B0;
+}
+.otherProduct section[class] ul li a{
+  text-decoration: none;
+  line-height: 20px;
+}
+.otherProduct section[class]>ul li a img{
+  margin: 10px 0px;
+}
+
+/* ai三个标签 */
+section.threeTab >span:nth-of-type(1){
+  right: 100px;
+}
+section.threeTab >span:nth-of-type(2){
+  right: 50px;
+}
+
+section.threeTab >span:nth-of-type(1):hover ~ .detailAllDivBox .detailAllDiv{
+
+  left: 0px;
+  transition: 0s;
+}
+section.threeTab >span:nth-of-type(2):hover ~ .detailAllDivBox .detailAllDiv{
+  left: -989px;
+  transition:0s;
+}
+
+section.threeTab >span:nth-of-type(3):hover ~ .detailAllDivBox .detailAllDiv{
+  left: -1978px;
+  transition:0s;
+}
+section.threeTab >span:nth-of-type(1):hover ~ .detailAllDivBox .detailAllDiv,
+section.threeTab >span:nth-of-type(2):hover ~ .detailAllDivBox .detailAllDiv{
+  transition: none;
+}
+/* 搭配  2个标签 */
+section.twoTab >span:nth-of-type(1){
+  right: 100px;
+}
+section.twoTab >span:nth-of-type(1):hover ~ .detailAllDivBox .detailAllDiv{
+
+  left: 0px;
+  transition: 0s;
+}
+section.twoTab >span:nth-of-type(2):hover ~ .detailAllDivBox .detailAllDiv{
+  left: -989px;
+  transition:0s;
+}
+section.twoTab >span:nth-of-type(1):hover ~ .detailAllDivBox .detailAllDiv
+{
+  transition: none;
+}
+
+.miVideo >a > span::after{
+  content: '';
+  display: inline-block;
+  width:24px;
+  height: 24px;
+  background: url(../img/right-circle-static.png) no-repeat;
+  background-size: 24px 24px;
+  position: absolute;
+  left: 70px;
+  top: -1px;
+}
+.miVideo>a > span:hover{
+  color: #FF6700;
+  transition: 0.3s;
+}
+.miVideo >a > span:hover::after{
+  background: url(../img/right-circle.png) no-repeat;
+  background-size: 24px 24px;
+  transition: 0.3s;
+}
+
+.miVideo >a >span{
+  position: absolute;
+  right: 30px;
+  top: 195px;
+  color: #424242;
+}

@@ -1,0 +1,143 @@
+
+.flashPurchaseList{
+  width: 100%;
+  height: 340px;
+  font-size: 0px;
+  /* position: relative; */
+}
+
+
+.flashPurchase .flashPurchaseList .falshPurchaseProduct{
+  width: 990px;
+  height: 340px;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+/* 用于套在产品列表外边的框实现类似轮播的移动 */
+.flashPurchase .flashPurchaseList .falshPurchaseProduct > ul{
+  width: 3960px;
+  height: 340px;
+  position: absolute;
+  left: 0px;
+  z-index: 100;
+}
+.flashPurchase .flashPurchaseList .falshPurchaseTime,
+.flashPurchase .flashPurchaseList .falshPurchaseProduct > ul >li{
+
+  display: inline-block;
+  width: 236px;
+  height: 340px;
+  background: white;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+.flashPurchase .flashPurchaseList .falshPurchaseProduct > ul >li{
+  margin-left: 11px ;
+  font-size: 1rem;
+}
+
+.flashPurchase .flashPurchaseList .falshPurchaseProduct > ul >li:nth-child(3n+1){
+  border-top: pink 2px solid ;
+}
+.flashPurchase .flashPurchaseList .falshPurchaseProduct > ul >li:nth-child(3n+2){
+  border-top: green 2px solid ;
+}
+.flashPurchase .flashPurchaseList .falshPurchaseProduct > ul >li:nth-child(3n+3){
+  border-top: greenyellow 2px solid ;
+}
+.flashPurchase .flashPurchaseList .falshPurchaseTime{
+
+  border-top: 2px solid red;
+  background-color: #F1EDED;
+
+}
+.flashPurchase .flashPurchaseList .falshPurchaseTime > div:nth-child(1){
+
+    height: 31px;
+    font-size: 22px;
+    color:#E53934;
+    line-height: 31px;
+    margin: 58px auto 30px;
+}
+.flashPurchase .flashPurchaseList .falshPurchaseTime > div:nth-child(3){
+  height: 16px;
+  font-size:14px;
+  color: #6F6D6D;
+  margin: 32px 0px;
+}
+.flashPurchase .flashPurchaseList .falshPurchaseTime > div:nth-child(4){
+  font-size: 24px;
+
+}
+.flashPurchase .flashPurchaseList .falshPurchaseTime > div:nth-child(4) span{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #605751;
+  color: white;
+  line-height: 45px;
+}
+
+/* 按钮 */
+.flashPurchase{
+  position: relative;
+}
+
+.flashPurchase >.beforeSale,
+.flashPurchase > .nextSale{
+  display: inline-block;
+  width: 34px;
+  height: 24px;
+  box-sizing: border-box;
+  border: 1px solid #E0E0E0;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  z-index: 10;
+}
+
+.flashPurchase .beforeSale{
+  right: 34px;
+  background: url(../img/flashsale-left-static.png) no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+}
+.flashPurchase .beforeSale:hover{
+  right: 34px;
+  background: url(../img/flashsale-left.png) no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+}
+.flashPurchase .nextSale{
+  background: url(../img/flashsale-right-static.png) no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+}
+.flashPurchase .nextSale:hover{
+  background: url(../img/flashsale-right.png) no-repeat;
+   background-position: center;
+  background-size: 24px 24px;
+}
+
+.flashPurchase .flashPurchaseList .falshPurchaseProduct ul>li>a>img{
+  display: inline-block;
+  margin: 15px auto;
+}
+
+.otherProduct .flashPurchase input[type="radio"]{
+  display: none;
+}
+
+#beforeSaleRadio:checked ~.flashPurchaseList .falshPurchaseProduct ul{
+  left: 0px;
+  transition: 0.5s;
+}
+
+#nextSaleRadio:checked ~.flashPurchaseList .falshPurchaseProduct ul{
+  left: -990px;
+  transition: 0.5s;
+}

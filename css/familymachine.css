@@ -1,0 +1,160 @@
+
+.miFamilyMachine .machineDetail,
+.detailAll{
+  width: 980px;
+  height: 612px;
+  list-style: none;
+  font-size: 0px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.miFamilyMachine .machineDetail li,
+.detailAll li{
+
+  display: inline-block;
+  width: 236px;
+  height: 302px;
+  background: white;
+  vertical-align: top;
+  font: 1rem;
+  text-align: center;
+  margin-bottom:11px ;
+  /* border: 1px springgreen solid; */
+}
+.miFamilyMachine .machineDetail>li:not(:nth-child(4n+4)),
+.detailAll li:not(:nth-child(4n+4))
+{
+  margin-right:11px;
+}
+
+.miFamilyMachine .machineImgDiv,
+.asideImgbox{
+  display: inline-block;
+  width: 236px;
+  height: 612px;
+  font-size: 0px;
+}
+
+.miFamilyMachine .machineImgDiv img,
+.asideImgbox img{
+  width: 236px;
+  height: 302px;
+  margin-bottom: 11px;
+}
+.miFamilyMachine .machineDetail .smallSale,
+.detailAll .smallSale{
+  background: #F5F5F5;
+}
+.miFamilyMachine .machineDetail .smallSale>li,
+.detailAll .smallSale>li{
+  display: inline-block;
+  width: 236px;
+  height: 145px;
+  background: white;
+}
+
+/* 最后两个小框 */
+.miFamilyMachine .machineDetail .smallSale>li:nth-child(1),
+.detailAll .smallSale>li:nth-child(1){
+  margin-bottom:11px ;
+}
+.miFamilyMachine .machineDetail .smallSale>li:nth-child(1)>a>p,
+.detailAll .smallSale>li:nth-child(1)>a>p{
+  line-height: 24px;
+}
+.miFamilyMachine .machineDetail .smallSale >li:nth-child(1)>a>p:nth-child(2),
+.detailAll .smallSale>li:nth-child(1)>a>p:nth-child(2){
+  margin-top:30px ;
+  font-size: 14px;
+  color: #333333;
+}
+.miFamilyMachine .machineDetail .smallSale >li:nth-child(1)>a>p:nth-child(3),
+.detailAll .smallSale >li:nth-child(1)>a>p:nth-child(3){
+  font-size: 14px;
+  line-height: 30px;
+  color: #FF6700;
+}
+.miFamilyMachine .machineDetail .smallSale >li:nth-child(1)>a>img,
+.detailAll .smallSale >li:nth-child(1)>a>img{
+  float: right;
+}
+
+.miFamilyMachine .machineDetail .smallSale >li:nth-child(2) > a > p:nth-child(1),
+.detailAll .smallSale >li:nth-child(2) > a > p:nth-child(1){
+  margin-top: 50px;
+  line-height: 30px;
+  font-size: 24px;
+  color: #333333;
+}
+.miFamilyMachine .machineDetail .smallSale >li:nth-child(2) > a > p:nth-child(2),
+.detailAll .smallSale >li:nth-child(2) > a > p:nth-child(2){
+  line-height: 20px;
+  font-size: 12px;
+  color: #B0B0B0;
+}
+
+
+
+.miFamilyMachine,
+section[class]{
+  position: relative;
+}
+/* 标签 */
+
+.miFamilyMachine > span,
+.otherProduct section>span{
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  line-height: 30px;
+   /* translate: 0s 999s; */
+}
+.miFamilyMachine > span:nth-child(3){
+  right: 100px;
+}
+.miFamilyMachine > span:hover,
+.otherProduct section[class]>span:hover{
+  border-bottom:2px solid #FF6700 ;
+  color: #FF6700;
+  translate: 0s;
+}
+
+/* 切换相关 */
+.miFamilyMachine .smachineDetailDiv,
+.detailAllDivBox{
+  display: inline-block;
+  width: 985px;
+  height: 612px;
+  /* border: 5px solid red; */
+  box-sizing: border-box;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.miFamilyMachine .smachineDetailDiv .machineDetailDivAll,
+.detailAllDivBox .detailAllDiv{
+  display: inline-block;
+  vertical-align: top;
+  width: 3000px;
+  height: 612px;
+  position: absolute;
+  left: 0;
+  transition: 0s 999s;
+}
+
+.miFamilyMachine > span:nth-of-type(1):hover ~.smachineDetailDiv .machineDetailDivAll{
+  left: 0px;
+  transition:0s;
+}
+.miFamilyMachine > span:nth-of-type(2):hover ~.smachineDetailDiv .machineDetailDivAll{
+  left: -989px;
+  transition:0s;
+}
+
+.miFamilyMachine > span:nth-of-type(1):hover ~ div.smachineDetailDiv .machineDetailDivAll{
+  transition: none;
+}

@@ -1,0 +1,109 @@
+.otherProduct{
+  padding-bottom: 20px;
+}
+
+.miVideo> .miVideoDiv{
+  list-style: none;
+  width: 1226px;
+  font-size: 0px;
+}
+
+.miVideo> .miVideoDiv> div{
+  display: inline-block;
+  width: 296px;
+  height: 285px;
+  vertical-align: top;
+  background: white;
+  position: relative;
+}
+.miVideo> .miVideoDiv> div:nth-child(n+1){
+  margin-left: 10px;
+}
+.miVideo> .miVideoDiv> div{
+  text-align: center;
+  font-size: 14px;
+  width: 296px;
+  height: 285px;
+  text-align: center;
+}
+
+.miVideo>.miVideoDiv> div>img{
+  /* display: inline-block; */
+  width: 296px;
+  height: 180px;
+  position: relative;
+  top:-10px;
+}
+.miVideo> .miVideoDiv> div>p{
+  position: relative;
+  top: 15px;
+}
+
+.miVideo> .miVideoDiv>div::after{
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  border: 2px solid white;
+  background: url(../img/yousanjiao1.png) rgba(0, 0, 0, 0.38) no-repeat;
+  background-size:12px 12px ;
+  background-position: center;
+  border-radius: 25px;
+  position: absolute;
+  top: 140px;
+  left: 20px;
+}
+.miVideo> .miVideoDiv> div:hover::after{
+  background-color: #FF6700 ;
+  border-color:#FF6700 ;
+  transition: 0.5s;
+}
+
+.miVideo> .miVideoDiv> div:hover{
+  transform: translate3d(0,-2px,0);
+  transition: 0.5s;
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+.miVideo>.miVideoDiv >.fixVideo > div{
+  visibility: hidden;
+  display: inline-block;
+  width: 880px;
+  height: 536px;
+  background: white;
+  /* border: s1px solid black; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0px;
+  margin:auto;
+  z-index: 200;
+  box-sizing: border-box;
+}
+
+.miVideo>.miVideoDiv>div:focus-within~.fixVideo>div:first-child{
+  visibility: visible;
+}
+
+
+/* 视频框 */
+.miVideo>.miVideoDiv>.fixVideo{
+  font-size: 0px;
+}
+.miVideo>.miVideoDiv>.fixVideo>div{
+  font-size: 18px;
+  background-color: #F5F5F5;
+  line-height: 60px;
+}
+.miVideo>.miVideoDiv>.fixVideo>div>p{
+  margin-left: 20px;
+}
+.miVideo>.miVideoDiv>.fixVideo>div>video{
+  width: 880px;
+  height: 596px;
+  margin-top: -50px;
+}
+.miVideo>.miVideoDiv>.fixVideo div:hover{
+  visibility: visible;
+}
